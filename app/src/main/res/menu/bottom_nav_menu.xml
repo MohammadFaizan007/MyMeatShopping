@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_wallet"
+        android:icon="@drawable/wallet"
+        android:title="WALLET" />
+
+    <item
+        android:id="@+id/navigation_spl"
+        android:icon="@drawable/ic_todayspecial"
+        android:title="SPECIAL" />
+    <item
+        android:id="@+id/navigation"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_orders"
+        android:icon="@drawable/ic_cart"
+        android:title="ORDERS" />
+    <item
+        android:id="@+id/navigation_help"
+        android:icon="@drawable/ic_help"
+        android:title="HELP" />
+
+</menu>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/productImage"
+                android:layout_width="match_parent"
+                android:layout_height="174dp"
+                android:layout_marginTop="4dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <ImageView
+                android:id="@+id/wishlistImg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_like"
+                android:tint="#717171"
+                app:layout_constraintBottom_toBottomOf="@+id/productNameTv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/productNameTv" />
+
+            <TextView
+                android:id="@+id/productNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:padding="6dp"
+                android:textAllCaps="true"
+                android:textColor="#464646"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/wishlistImg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/productImage" />
+
+            <TextView
+                android:id="@+id/productDetailsTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:padding="6dp"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/wishlistImg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/productNameTv" />
+
+            <TextView
+                android:id="@+id/tv15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/light_grey"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="PACK"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/tv87"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/productDetailsTv" />
+
+            <TextView
+                android:id="@+id/tv87"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/light_grey"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="GROSS"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/tv54"
+                app:layout_constraintStart_toEndOf="@+id/tv15"
+                app:layout_constraintTop_toBottomOf="@id/productDetailsTv" />
+
+            <TextView
+                android:id="@+id/tv54"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/light_grey"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="NET"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv87"
+                app:layout_constraintTop_toBottomOf="@id/productDetailsTv" />
+
+            <TextView
+                android:id="@+id/packValue_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/light_grey"
+                android:gravity="center"
+                android:padding="4dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/grossValue_tv"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv15" />
+
+            <TextView
+                android:id="@+id/grossValue_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.2dp"
+                android:background="@color/light_grey"
+                android:gravity="center"
+                android:padding="4dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/netValue_tv"
+                app:layout_constraintStart_toEndOf="@+id/packValue_tv"
+                app:layout_constraintTop_toBottomOf="@id/tv87" />
+
+            <TextView
+                android:id="@+id/netValue_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.2dp"
+                android:background="@color/light_grey"
+                android:gravity="center"
+                android:padding="4dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/grossValue_tv"
+                app:layout_constraintTop_toBottomOf="@id/tv54" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F5F5F5"
+                app:layout_constraintTop_toBottomOf="@id/grossValue_tv">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="Offer Price"
+                    android:textAllCaps="true"
+                    android:textSize="10sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/OfferPriceTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="2dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="MRP"
+                    android:textAllCaps="true"
+                    android:textSize="10sp"
+                    app:layout_constraintEnd_toStartOf="@+id/textView17"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/price_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textView17"
+                    app:layout_constraintStart_toStartOf="@+id/textView19"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+
+                <com.travijuu.numberpicker.library.NumberPicker
+                    android:id="@+id/qtyBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:custom_layout="@layout/custom_number_picker"
+                    app:focusable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:min="0"
+                    app:unit="1"
+                    app:value="0" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

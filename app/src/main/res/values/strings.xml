@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">My Meat Shop</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="alert_text">Alert</string>
+    <string name="permission_camera_rationale11">Some permission are required to use the app.</string>
+    <string name="permission_location">Location permission are required to use the app.</string>
+    <string name="reqst_permission">Request permission?</string>
+    <string name="alert_internet">Not able to connect to Server. Please check your network connection and try again.</string>
+    <string name="enter_pswd_err">Please Enter Your Password</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">540681720016402</string>
+    <string name="fb_login_protocol_scheme">fb540681720016402</string>
+
+    <string name="OurVision">We look forward to make the chain of Mymeatshops.com all over India and will fly to fulfill the global demand also. Mymeatshops.com is poised to make a model which will serve the global market with its unique idea of making raw meat available at your door steps. </string>
+    -->
+    <string name="ourvisiontitle">Our Vision</string>
+    <string name="theindustry">Meat and meat products are crucial part of the daily Diet. Meat is highly demanded food items of human being due to presence of plentiful proteins, minerals and all the B-complex vitamins with excellent digestibility and well-balanced composition of essential amino acids. Population growth, urbanization, changed life styles and increased per capita income are fuelling a massive increase in demand for food of animal origin all around the world. According to the study in 1990 made a prediction that the demand for milk will double and that for meat will treble in India by 2020. As per World Bank projection, worldwide demand for food will increase by 50% and for meat by 85% by 2030.Governments and industries must prepare for meeting demand of meat in the country with long run policies and investments to satisfy ever rising consumer demand, improve nutritional status, generation of income opportunities and alleviate environment stress. Definitely this is a sign that we are working in an industry which will keep flourishing in coming </string>
+    -->
+    <string name="theindustrytitle">THE INDUSTRY</string>
+    <string name="orderingtitle">Ordering Raw Meat Easy</string>
+    <string name="about_us">Meatshops is simply the easiest way to order raw meat for delivery at your home. Whatever you\'re in the mood for, wherever you\'re in the mood for it, you\'ve got it. We are simply a call away. Mymeatshops.com is the pioneer in the unique business model of delivering raw meat items at your door step. We are serving non vegetarian mainly raw chicken, raw mutton and fish. The idea behind is to serve the society by giving them a hassle free home delivery for these items. Mymeatshops.com products are procured from our quality farms. Yet India has an unorganized market for raw chicken and raw mutton and we want to create a platform where users can order non veg items by simply giving a call and we will be more than happy to serve the same at your door step. The idea is to help house wife by making quick decisions to make non veg food with a hassle free doorstep delivery. Our Mission To offer delicious non veg raw meat at your door step and to create a platform for all users who love or some time die heartedly want to enjoy the same at their home. Mymeatshops.com is one of the pioneer in the industry which is committed to serve only quality non veg items to all lovers. </string>
+
+    <string name="permission_rationale">Please grant location permission to start the service</string>
+</resources>

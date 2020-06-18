@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/custom_header" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bac_drawable">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <EditText
+                android:id="@+id/edt_Name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bac_drawable"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:minHeight="50dp"
+                android:paddingStart="8dp"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <EditText
+                android:id="@+id/edt_contactno"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bac_drawable"
+                android:ems="10"
+                android:hint="Contact Number"
+                android:inputType="number"
+                android:maxLength="10"
+
+                android:minHeight="50dp"
+                android:paddingStart="8dp"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="@+id/edt_Name"
+                app:layout_constraintHorizontal_bias="0.546"
+                app:layout_constraintStart_toStartOf="@+id/edt_Name"
+                app:layout_constraintTop_toBottomOf="@+id/edt_Name" />
+
+            <EditText
+                android:id="@+id/edt_pincode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bac_drawable"
+                android:ems="10"
+                android:hint="PinCode"
+                android:inputType="number"
+                android:maxLength="6"
+                android:minHeight="50dp"
+
+                android:paddingStart="8dp"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="@+id/edt_contactno"
+                app:layout_constraintHorizontal_bias="0.546"
+                app:layout_constraintStart_toStartOf="@+id/edt_contactno"
+                app:layout_constraintTop_toBottomOf="@+id/edt_contactno" />
+
+            <EditText
+                android:id="@+id/edt_desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bac_drawable"
+                android:ems="10"
+                android:hint="Description"
+                android:inputType="text"
+
+                android:minHeight="50dp"
+                android:minLines="4"
+                android:paddingStart="8dp"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="@+id/edt_pincode"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/edt_pincode"
+                app:layout_constraintTop_toBottomOf="@+id/edt_pincode" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/background_btn"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/edt_desc"
+                app:layout_constraintStart_toStartOf="@+id/edt_desc"
+                app:layout_constraintTop_toBottomOf="@+id/edt_desc" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

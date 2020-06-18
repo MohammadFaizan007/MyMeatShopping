@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".common_activities.MainContainer">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="?attr/colorPrimary"
+            android:contentInsetStart="0dp"
+            android:contentInsetLeft="0dp"
+            android:contentInsetEnd="0dp"
+            android:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/consLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp">
+
+
+                <ImageView
+                    android:id="@+id/img_contactUs"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="6dp"
+                    android:scaleType="centerInside"
+                    android:tint="@color/white"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/img_search"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_support"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <ImageView
+                    android:id="@+id/img_search"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:tint="@color/white"
+                    android:padding="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/cartLo"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_search_white_24dp"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <ImageView
+                    android:id="@+id/img_track"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="5dp"
+                    android:layout_marginEnd="4dp"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/img_search"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_tracking"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <RelativeLayout
+                    android:id="@+id/cartLo"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/notification_bell"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <!-- Menu Item Image -->
+                    <ImageView
+                        android:id="@+id/badge"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="4dp"
+                        android:padding="6dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/ic_shopping_cart"
+                        android:tint="@color/white" />
+
+                    <!-- Badge Count -->
+                    <TextView
+                        android:id="@+id/cart_counter"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="4dp"
+                        android:background="@drawable/cart_bg"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/notification_bell"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="4dp"
+                    android:padding="6dp"
+                    android:scaleType="centerInside"
+                    android:tint="@color/white"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_bell"
+                    tools:ignore="VectorDrawableCompat" />
+
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="4dp"
+                    android:drawableEnd="@drawable/ic_keyboard_arrow_down_white_24dp"
+                    android:drawablePadding="5dp"
+                    android:gravity="start"
+                    android:padding="2dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/img_track"
+                    app:layout_constraintHorizontal_bias="0.09"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_noti_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/circle_dot"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/notification_bell"
+                    app:layout_constraintTop_toTopOf="@+id/notification_bell" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

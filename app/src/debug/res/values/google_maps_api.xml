@@ -1,0 +1,26 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=8F:EA:A2:79:41:67:95:E1:6F:18:AB:A8:E6:D1:AB:00:0E:FD:85:23%3Bcom.mymeatshop.activities
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    8F:EA:A2:79:41:67:95:E1:6F:18:AB:A8:E6:D1:AB:00:0E:FD:85:23
+
+    SHA-1 certificate fingerprint:
+    8F:EA:A2:79:41:67:95:E1:6F:18:AB:A8:E6:D1:AB:00:0E:FD:85:23
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+   <!-- <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyC2AQx9Gpxzr0ZhljWWWEHMevczAoBBqjc</string>-->
+    <!--<string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyApYRF4XmMRpW2IqRQ5wor3KPLoihvon_8</string>-->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBya2mwhls6NsSvOeGjaf7qytZcvUYi5ZM</string>
+</resources>

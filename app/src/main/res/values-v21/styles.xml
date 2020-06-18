@@ -1,0 +1,16 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="RadioButtonStyleSecond" parent="AppTheme">
+        <item name="colorControlNormal">@color/text_color</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:textColorSecondary">@color/text_color</item>
+    </style>
+</resources>

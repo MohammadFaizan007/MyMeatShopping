@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Pincode availability"
+        android:textAppearance="@style/TextField_Regular"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Please enter your current pincode to check serviceability.You can check again in the future while adding an address."
+        android:textAppearance="@style/TextField_Regular"
+        android:textColor="@color/gray"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/pincode_et"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/curveborder"
+        android:hint="pincode"
+        android:inputType="number"
+        android:maxLength="6"
+        android:padding="8dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/error_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Error:This area is currently not serviceable"
+        android:textAppearance="@style/TextField_Regular"
+        android:textColor="@color/red"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cancel_pin"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:text="CANCEL"
+            android:textAppearance="@style/TextField_Regular"
+            android:textColor="@color/green"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/set_pin"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:text="SET"
+            android:textAppearance="@style/TextField_Regular"
+            android:textColor="@color/green"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

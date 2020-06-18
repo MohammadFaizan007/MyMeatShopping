@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/sidemenu_gradient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/side_menu"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_left_arrow"
+            android:tint="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/circleImageView2" />
+
+        <TextView
+            android:id="@+id/emailId_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_tv" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/app_logo"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="158dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/myOrder_img"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_tracking"
+                android:tint="#555555"
+                app:layout_constraintEnd_toStartOf="@+id/wishList_img"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/wishList_img"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_like"
+                android:tint="#555555"
+                app:layout_constraintEnd_toStartOf="@+id/rateUs_Img"
+                app:layout_constraintStart_toEndOf="@+id/myOrder_img"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/rateUs_Img"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_star"
+                android:tint="#555555"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/wishList_img"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/myOrder_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="My orders"
+                android:textColor="#555555"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/wishList_tv"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wishList_img" />
+
+            <TextView
+                android:id="@+id/wishList_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="My Wishlist"
+                android:textColor="#555555"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/rateUs_tv"
+                app:layout_constraintStart_toEndOf="@+id/myOrder_tv"
+                app:layout_constraintTop_toBottomOf="@+id/rateUs_Img" />
+
+            <TextView
+                android:id="@+id/rateUs_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Rate us"
+                android:textColor="#555555"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/wishList_tv"
+                app:layout_constraintTop_toBottomOf="@+id/rateUs_Img" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/person_img"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_avatar_two"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView6" />
+
+    <ImageView
+        android:id="@+id/password_img"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_locked"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/person_img" />
+
+    <ImageView
+        android:id="@+id/address_img"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_img" />
+
+    <ImageView
+        android:id="@+id/log_img"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_sign_out"
+        android:tint="@color/red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address_img" />
+
+    <TextView
+        android:id="@+id/persondetails_tv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:drawableEnd="@drawable/right_arror"
+        android:drawableTint="@color/text_color"
+        android:gravity="center_vertical"
+        android:text="Update personal details"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/person_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/person_img"
+        app:layout_constraintTop_toTopOf="@+id/person_img" />
+
+    <TextView
+        android:id="@+id/password_tv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:drawableEnd="@drawable/right_arror"
+        android:drawableTint="@color/text_color"
+        android:gravity="center_vertical"
+        android:text="Change Password"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/password_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/password_img"
+        app:layout_constraintTop_toTopOf="@+id/password_img" />
+
+    <TextView
+        android:id="@+id/address_tv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:drawableEnd="@drawable/right_arror"
+        android:drawableTint="@color/text_color"
+        android:gravity="center_vertical"
+        android:text="Manage Address"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/address_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/address_img"
+        app:layout_constraintTop_toTopOf="@+id/address_img" />
+
+    <TextView
+        android:id="@+id/singout_tv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:drawableEnd="@drawable/right_arror"
+        android:drawableTint="@color/red"
+        android:gravity="center_vertical"
+        android:text="Sign Out"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/log_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/log_img"
+        app:layout_constraintTop_toTopOf="@+id/log_img"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
